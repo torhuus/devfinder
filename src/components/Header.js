@@ -13,9 +13,10 @@ const HeaderWrapper = styled.header`
 
 const Logo = styled.h1`
   font-size: 26px;
+
   a {
-  color:inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
   }
 `
 
@@ -24,7 +25,8 @@ const ModeButton = styled.button`
   align-items: center;
   font-size: 13px;
   font-weight: bold;
-
+  cursor:pointer;
+  
   span {
     margin-top: 1px;
   }
