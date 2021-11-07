@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './components/globalStyles';
 import { lightTheme, darkTheme } from './components/Theme';
-
+import Header from './components/Header'
+import Search from "./components/Search";
+import UserInformation from "./components/UserInformation";
 
 function App() {
 	const [theme, setTheme] = useState('light');
@@ -18,8 +18,9 @@ function App() {
 			<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
 				<GlobalStyles />
 				<div className="App">
-					<button onClick={() => themeToggler()}>Change me</button>
-					<h1>Welcome to GitHub API-based developer finder</h1>
+					<Header themeToggler={themeToggler}/>
+					<Search/>
+					<UserInformation/>
 				</div>
 			</ThemeProvider>
 		</>

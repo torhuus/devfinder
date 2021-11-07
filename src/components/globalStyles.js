@@ -1,9 +1,14 @@
-import { createGlobalStyle } from 'styled-components'
+import {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
-	body {
-		background: ${({ theme }) => theme.body};
-		color: ${({ theme }) => theme.text};
-		font - family: Tahoma, Helvetica, Arial, Roboto, sans - serif;
-		transition: all .3s linear;
-}`;
+  body {
+    background: ${({theme}) => theme.bodyBg};
+    color: ${({theme}) => theme.lighterText};
+    font-family: 'Space Mono', monospace;
+    transition: all .3s linear;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    color: ${({theme}) => theme.mainText};
+  }
+
+`;
