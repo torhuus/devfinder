@@ -35,7 +35,7 @@ function App() {
                 'https://api.github.com/users/becca9lsen', {
                     headers: {
                         'Accept': 'application/vnd.github.v3+json',
-                        'Authorization': 'token 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',
+                        'Authorization': process.env.GITHUB_API_TOKEN,
                     }
                 }
             );
