@@ -17,6 +17,7 @@ const SearchWrapper = styled.section`
 
   @media screen and (max-width: 800px){
     margin-bottom: 16px;
+    flex-direction: column;
   }
 `
 
@@ -62,6 +63,8 @@ const SearchButton = styled.button`
   
   @media screen and (max-width: 800px){
     font-size: 14px;
+    width: 100%;
+    margin-top: 18px;
   }
 `
 

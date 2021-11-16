@@ -5,13 +5,13 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all .3s ease;
   }
 
   body {
     background: ${({theme}) => theme.bodyBg};
     color: ${({theme}) => theme.lighterText};
     font-family: 'Space Mono', monospace;
-    transition: all .3s linear;
   }
 
   input {

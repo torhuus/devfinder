@@ -6,7 +6,7 @@ import {ReactComponent as LinkIcon} from '../assets/icon-website.svg';
 import {ReactComponent as LocationIcon} from '../assets/icon-location.svg'
 import dayjs from 'dayjs'
 
-const UserInformationWrapper = styled.header`
+const UserInformationWrapper = styled.section`
   max-width: 730px;
   width: 100%;
   margin-bottom: 37px;
