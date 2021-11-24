@@ -32,7 +32,7 @@ function App() {
     useEffect(() => {
         const fetchData = async () => {
             const res = await fetch(
-                'https://api.github.com/users/becca9lsen', {
+                'https://api.github.com/users/torhuus', {
                     headers: {
                         'Accept': 'application/vnd.github.v3+json',
                         'Authorization': process.env.GITHUB_API_TOKEN,
