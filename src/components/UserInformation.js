@@ -185,7 +185,7 @@ const UserLinks = styled.div`
 
 function UserInformation({user}) {
     return (
-        <UserInformationWrapper>
+        <UserInformationWrapper className={"image"}>
             <UserAvatar className="image">
                 <img src={user.avatar_url} alt={user.name}/>
             </UserAvatar>
